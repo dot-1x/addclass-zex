@@ -5,7 +5,7 @@ export default function AboutSection() {
       id="about"
     >
       <h2 className="uppercase font-medium text-[var(--primary-color)] text-5xl">
-        About me
+        About Zex
       </h2>
       <p className="text-xl uppercase font-medium md:max-w-2xl">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
