@@ -8,19 +8,13 @@ export default function HeroSection() {
         <div className="flex flex-col justify-center py-4 md:p-6 text-center rounded-sm lg:max-w-md xl:max-w-4xl lg:text-left ">
           <div className="space-y-6">
             <h1 className="text-5xl font-medium leading-none sm:text-7xl uppercase">
-              Hi im{" "}
-              <span className="text-[var(--primary-color)]">
-                Nizaar ganteng
-              </span>
+              Hi im <span className="text-[var(--primary-color)]">Zex.</span>
             </h1>
             <h2 className="text-5xl  font-medium leading-none sm:text-5xl uppercase text-[var(--primary-color)]">
-              Web Developer
+              Back-End Developer
             </h2>
             <p className="!mt-3 mb-8 text-xl sm:mb-12 uppercase font-medium md:max-w-2xl">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
-              rerum architecto velit quo ex beatae cumque quibusdam totam
-              dolores laudantium voluptatem, doloremque nobis sapiente labore
-              aperiam nulla blanditiis quod dolore soluta.
+              People also call me by: dotcchix / Zar
             </p>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-10 lg:justify-start">
               <Button link="/">Hire Me</Button>

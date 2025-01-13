@@ -1,19 +1,28 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image"
+import Link from "next/link"
 
 export interface IProject {
-  title: string;
-  tag: string;
-  desc: string;
-  img: string;
+  title: string
+  tag: string
+  desc: string
+  img: string
+  href?: string
 }
 export default function ProjectCard({ data }: { data: IProject }) {
   return (
-    <Link href="#" className="group relative block bg-black">
-      <Image width={500} height={500} alt={data.title} src={data.img} className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+    <Link href={data.href || "#"} className="group relative block bg-black">
+      <Image
+        width={500}
+        height={500}
+        alt={data.title}
+        src={data.img}
+        className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+      />
 
       <div className="relative p-4 sm:p-6 lg:p-8">
-        <p className="text-sm font-medium uppercase tracking-widest text-[var(--primary-color)]">{data.tag}</p>
+        <p className="text-sm font-medium uppercase tracking-widest text-[var(--primary-color)]">
+          {data.tag}
+        </p>
 
         <p className="text-xl font-bold text-white sm:text-2xl">{data.title}</p>
 
@@ -24,5 +33,5 @@ export default function ProjectCard({ data }: { data: IProject }) {
         </div>
       </div>
     </Link>
-  );
+  )
 }
